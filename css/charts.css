@@ -1,0 +1,122 @@
+.tables-section {
+  display: flex;
+  /* Aligns child elements horizontally */
+  justify-content: center;
+  /* Center child elements */
+  text-align: center;
+  /* Center text inside the boxes */
+  margin: 20px;
+  /* Add margin around the section */
+}
+
+.table-box {
+  flex: 1;
+  /* Each table box takes equal space */
+  min-width: 250px;
+  /* Minimum width for each box */
+  max-width: 450px;
+  /* Set a maximum width */
+  margin: 10px;
+  /* Spacing between boxes */
+  padding: 20px;
+  /* Padding inside each box */
+  background-color: rgba(70, 40, 237, 0.8);
+  /* Background color */
+  border: 1px solid #ccc;
+  /* Add a border */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* Shadow effect */
+  display: flex;
+  /* Use flexbox to align contents */
+  flex-direction: column;
+  /* Stack child elements vertically */
+  align-items: center;
+  /* Center align child elements */
+  color: #fff;
+
+  animation: pulse 2s infinite;
+  /* Apply pulse animation */
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+    /* Slightly grow the box */
+  }
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+    /* Start at original position */
+  }
+
+  40% {
+    transform: translateY(-10px);
+    /* Move up */
+  }
+
+  60% {
+    transform: translateY(-5px);
+    /* Slightly less up */
+  }
+}
+
+.charts {
+  display: flex;
+  /* Use flexbox */
+  flex-direction: column;
+  /* Stack charts vertically */
+  align-items: center;
+  /* Center align charts */
+  margin: 25px;
+  /* Outer margin for the charts section */
+}
+
+.chart {
+  width: 100%;
+  /* Set to full width */
+  max-width: 1000px;
+  /* Optional: Set a maximum width */
+  height: 460px;
+  /* Set a fixed height for each chart */
+  margin: 20px 0;
+  /* Spacing between charts */
+  padding: 20px;
+  /* Padding inside each chart box */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Background color */
+  border: 1px solid #ccc;
+  /* Border */
+  border-radius: 8px;
+  /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Shadow effect */
+  display: flex;
+  /* Allow child elements to use flexbox */
+  flex-direction: column;
+  /* Arrange child elements vertically */
+  align-items: center;
+  /* Center align child elements */
+  justify-content: center;
+}
+
+.chart h3 {
+  margin: 0 0 10px 0;
+  /* Add margin below the heading */
+  text-align: center;
+  /* Center align heading */
+}
